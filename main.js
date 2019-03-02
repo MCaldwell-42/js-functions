@@ -34,3 +34,9 @@ const nuggetizer = (animal) => {
 console.log(nuggetizer('pig'));
 console.log(nuggetizer('juice'));
 console.log(nuggetizer('shit'));
+
+const dogBreed = (breed) => {
+    console.log(`my favorite dog breed is ${breed}.`);
+}
+
+dogBreed('German Shepherd');
