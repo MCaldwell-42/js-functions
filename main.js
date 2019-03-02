@@ -25,3 +25,10 @@ console.log(`${firstName} ${lastName}`)
 
 namePrinter('James', 'Brown');
 namePrinter('OH', 'YEAH!');
+
+
+const nuggetizer = (animal) => {
+    return `processed ${animal}`;  
+};
+
+console.log(nuggetizer('pig'));
