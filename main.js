@@ -25,3 +25,18 @@ console.log(`${firstName} ${lastName}`)
 
 namePrinter('James', 'Brown');
 namePrinter('OH', 'YEAH!');
+
+
+const nuggetizer = (animal) => {
+    return `processed ${animal}`;  
+};
+
+console.log(nuggetizer('pig'));
+console.log(nuggetizer('juice'));
+console.log(nuggetizer('shit'));
+
+const dogBreed = (breed) => {
+    console.log(`my favorite dog breed is ${breed}.`);
+}
+
+dogBreed('German Shepherd');
