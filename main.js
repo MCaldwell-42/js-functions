@@ -36,7 +36,27 @@ console.log(nuggetizer('juice'));
 console.log(nuggetizer('shit'));
 
 const dogBreed = (breed) => {
-    console.log(`my favorite dog breed is ${breed}.`);
+    return `my favorite dog breed is ${breed}.`;
 }
 
 dogBreed('German Shepherd');
+
+// const dogBreedDiv = document.getElementById('dog-breeds');
+// dogBreedDiv.innerHTML = dogBreed('wolf');
+// console.log('dogBreedDiv', dogBreedDiv);
+
+
+// const nuggetizerDiv = document.getElementById('nuggetizer');
+// nuggetizerDiv.innerHTML = nuggetizer('duck');
+// nuggetizerDiv.innerHTML += nuggetizer('wolf');
+
+const printToDom = (divID, textToPrint) => {
+
+    const selectedDiv = document.getElementById(divID);
+    selectedDiv.innerHTML += textToPrint; 
+
+};
+printToDom('dog-breeds', dogBreed('wolf'));
+printToDom('nuggetizer', nuggetizer('duck feet'));
+printToDom('nuggetizer', nuggetizer('wolf'));
+printToDom('nuggetizer', 'mmmmmmmmm');
