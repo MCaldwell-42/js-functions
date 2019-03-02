@@ -32,3 +32,5 @@ const nuggetizer = (animal) => {
 };
 
 console.log(nuggetizer('pig'));
+console.log(nuggetizer('juice'));
+console.log(nuggetizer('shit'));
